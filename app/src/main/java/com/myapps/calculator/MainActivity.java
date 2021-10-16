@@ -112,7 +112,7 @@ public class MainActivity extends AppCompatActivity {
 
     public void action(View view) {
         //Ειδική μέριμνα για αρνητικούς αριθμούς
-        if (((Button) view).getText().toString().equals("-") && current.isEmpty()) {
+        if (((Button) view).getText().toString().equals("-") && ((current.isEmpty() && rest.isEmpty()) || (current.isEmpty() && !action.isEmpty()))) {
             current = "-" + current;
             displayNumber(current, currentText);
             return;
