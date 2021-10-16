@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">Calculator</string>
+    <string name="key">d3d522787a97908e9b25</string>
+
+    <string name="no_internet">Δεν έχετε πρόσβαση στο Internet.</string>
+
+    <string name="from">Από</string>
+    <string name="to">Σε</string>
+    <string name="convert">Μετατροπή</string>
+</resources>
