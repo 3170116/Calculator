@@ -133,7 +133,8 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void equal(View view) {
-        if (rest.isEmpty() || action.isEmpty() || current.isEmpty() || current.endsWith(",")) {
+        //Πρέπει και οι 3 μεταβλητές να έχουν τιμή
+        if (rest.isEmpty() || action.isEmpty() || current.isEmpty() || current.endsWith(",") || current.equals("-")) {
             return;
         }
 
