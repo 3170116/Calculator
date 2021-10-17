@@ -88,10 +88,6 @@ public class MainActivity extends AppCompatActivity {
             return;
         }
 
-        if (digit.equals(",") && current.isEmpty() && action.equals("/")) {
-            return;
-        }
-
         if (digit.equals(",") && (current.isEmpty() || current.equals("-"))) {
             current = current.isEmpty() ? "0," : "-0,";
             displayNumber(current, currentText);
@@ -99,10 +95,6 @@ public class MainActivity extends AppCompatActivity {
         }
 
         if (digit.equals("0") && (current.equals("0") || current.equals("-0"))) {
-            return;
-        }
-
-        if (digit.equals("0") && action.equals("/") && current.isEmpty()) {
             return;
         }
 
